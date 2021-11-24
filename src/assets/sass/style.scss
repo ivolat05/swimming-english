@@ -1,0 +1,23 @@
+@import "../sass/vendor/font.scss";
+@import "../sass/vendor/reset.scss";
+html {
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1258px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+@import "../sass/blocks/header.scss";
