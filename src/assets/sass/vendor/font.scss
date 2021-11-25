@@ -62,3 +62,16 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../../assets/font/OpenSans-Bold.eot");
+    src: url("../../assets/font/OpenSans-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../../assets/font/OpenSans-Bold.woff2") format("woff2"),
+        url("../../assets/font/OpenSans-Bold.woff") format("woff"),
+        url("../../assets/font/OpenSans-Bold.ttf") format("truetype"),
+        url("../../assets/font/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,44 @@
+.main {
+    margin-bottom: 150px;
+}
+
+.main__wrapp {
+    position: relative;
+}
+.main__coll-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 65px;
+
+    color: #242424;
+    padding-bottom: 67px;
+    padding-top: 167px;
+    margin-left: -5px;
+}
+
+.main-btn {
+    padding: 15px 35px;
+    border: 2px solid #242424;
+    border-radius: 45px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #242424;
+    display: inline-block;
+
+    margin-left: -9px;
+    transition: 0.4s;
+    &:hover {
+        border: 2px solid #bb2831;
+        color: #bb2831;
+    }
+}
+
+.main__inner {
+    position: absolute;
+    left: 51%;
+    top: 0;
+}

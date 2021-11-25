@@ -1,7 +1,5 @@
 @import "../sass/vendor/font.scss";
 @import "../sass/vendor/reset.scss";
-html {
-}
 
 * {
     box-sizing: border-box;
@@ -21,3 +19,9 @@ ul {
     margin: 0 auto;
 }
 @import "../sass/blocks/header.scss";
+@import "../sass/blocks/main.scss";
+@import "../sass/blocks/possibil.scss";
+@import "../sass/blocks/description.scss";
+@import "../sass/blocks/courses.scss";
+@import "../sass/blocks/teacher.scss";
+@import "../sass/blocks/news.scss";

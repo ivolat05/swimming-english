@@ -1,0 +1,136 @@
+.courses {
+    background: #f9f9f9;
+    padding: 90px 0 90px;
+    .container {
+        padding-left: 11px;
+        padding-right: 28px;
+    }
+    margin-bottom: 90px;
+}
+
+.courses__wrapp {
+    position: relative;
+}
+
+.courses__wrapp-img {
+    position: absolute;
+    left: -213px;
+    top: -30px;
+}
+
+.courses-title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+
+    color: #242424;
+
+    padding-bottom: 33px;
+}
+
+.courses__wrapp-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.courses__wrapp-box {
+    max-width: 594px;
+    background: #ffffff;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.courses__box-inner {
+    padding: 16px 20px 30px 20px;
+}
+
+.courses__box-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #031e65;
+    padding-bottom: 10px;
+}
+
+.courses__box-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #242424;
+
+    padding-bottom: 18px;
+}
+
+.btn {
+    padding: 10px 20px;
+
+    display: inline-block;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #bb2831;
+
+    border: 2px solid #bb2831;
+    border-radius: 45px;
+    transition: 0.4s;
+    &:hover {
+        color: #242424;
+
+        border: 2px solid #242424;
+    }
+}
+
+.courses-page {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 58px 60px 60px 170px;
+    position: relative;
+}
+
+.courses-page-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #031e65;
+    padding-bottom: 20px;
+}
+
+.courses-page-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #242424;
+    padding-bottom: 30px;
+}
+
+.courses-page-link {
+    display: inline-block;
+    background: #bb2831;
+    border-radius: 40px;
+    padding: 13px 90px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #ffffff;
+    transition: 0.4s;
+    &:hover {
+        background: #e42e3a;
+    }
+}
+
+.courses-page-img {
+    position: absolute;
+    top: -11px;
+    left: -102px;
+}

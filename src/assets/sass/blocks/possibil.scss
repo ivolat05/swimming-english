@@ -1,0 +1,50 @@
+.possibil {
+    margin-bottom: 86px;
+}
+.possibil__wrapp {
+    background: #f9f9f9;
+    border-radius: 50px;
+    padding: 84px 114px 77px 482px;
+    position: relative;
+}
+.possibil__inner {
+    position: absolute;
+    top: 96px;
+    left: -156px;
+}
+.possibil__wrapp-title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+
+    color: #242424;
+    padding-bottom: 21px;
+}
+
+.possibil__box-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #242424;
+    padding-bottom: 34px;
+}
+
+.possibil__list-inner {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    /* identical to box height */
+
+    color: #151515;
+    padding-bottom: 17px;
+    margin-left: 34px;
+    position: relative;
+
+    &::before {
+        content: url("../../assets/img/check.svg");
+        position: absolute;
+        left: -34px;
+        top: 0;
+    }
+}

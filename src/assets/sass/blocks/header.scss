@@ -1,13 +1,15 @@
 .header {
-    padding: 17px 0 33px;
+    padding: 14px 0 33px;
 }
 .header__wrapp {
+    padding-right: 7px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .logo {
+    margin-left: 7px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +26,6 @@
 }
 
 .nav__list {
-    padding-left: 56px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,20 +37,67 @@
     line-height: 22px;
     color: #242424;
     transition: 0.4s;
+    margin-left: 60px;
     &:hover {
-        text-decoration: underline;
+        color: #bb2831;
     }
 }
 
-.header__wrapp-col {
+.header__col {
     display: flex;
     flex-direction: column;
+    align-items: end;
+}
+.header__wrapp-col {
+    width: 221px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    position: relative;
+    margin-bottom: 19px;
+    &::before {
+        content: url("../../assets/img/phone.svg");
+        position: absolute;
+        left: -66px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
 .header__row-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     font-family: "Open Sans";
-    font-weight: bold;
+    font-weight: 600;
     font-size: 20px;
     line-height: 27px;
     color: #242424;
+    span {
+        font-weight: bold;
+        padding-left: 4px;
+    }
+    img {
+        width: 20px;
+        height: 20px;
+        margin-left: 9px;
+    }
+}
+
+.header__col-row {
+    display: flex;
+    align-items: center;
+}
+
+.header__link {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #bb2831;
+    text-align: left;
+    transition: 0.4s;
+    &:hover {
+        color: #242424;
+    }
 }
