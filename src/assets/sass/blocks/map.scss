@@ -1,0 +1,52 @@
+.map {
+    position: relative;
+}
+
+.map-wrapp {
+    position: absolute;
+    background: url("../../assets/img/pnыыgwing.png") no-repeat right 30px bottom 32px, #bb2831;
+    border-radius: 20px;
+    padding: 40px 148px 23px 30px;
+    top: 78px;
+    left: 50%;
+    transform: translateX(22%);
+}
+
+.map-row {
+    display: flex;
+    justify-content: start;
+}
+
+.map-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ffffff;
+
+    padding-bottom: 21px;
+}
+.map-row-name {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #ffffff;
+}
+
+.map-row {
+    padding-bottom: 15px;
+}
+.map-row:nth-last-child(2) {
+    padding-bottom: 29px;
+}
+.map-row-adress,
+.map-row-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.map-mess {
+    margin-right: 15px;
+}

@@ -1,4 +1,5 @@
 @import "../sass/vendor/font.scss";
+@import "../sass/vendor/slick.scss";
 @import "../sass/vendor/reset.scss";
 
 * {
@@ -25,3 +26,7 @@ ul {
 @import "../sass/blocks/courses.scss";
 @import "../sass/blocks/teacher.scss";
 @import "../sass/blocks/news.scss";
+@import "../sass/blocks/reviews.scss";
+@import "../sass/blocks/map.scss";
+@import "../sass/blocks/footer.scss";
+@import "../sass/blocks/popup-bell.scss";

@@ -1,0 +1,100 @@
+.reviews {
+    margin-bottom: 90px;
+
+    .container {
+        position: relative;
+    }
+}
+
+.reviews-btn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #bb2831;
+    transition: 0.4s;
+    &:hover {
+        color: #242424;
+    }
+}
+
+.reviews-title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #242424;
+
+    padding-bottom: 15px;
+}
+
+.reviews__slaider-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.reviews__slaider-col {
+    background: #031e65;
+    border-radius: 20px;
+    padding: 40px 30px 60px 30px;
+}
+
+.reviews__slaider-col-2 {
+    background: #f9f9f9;
+    border-radius: 20px;
+    padding: 30px;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #242424;
+}
+
+.reviews-img {
+    padding-bottom: 30px;
+}
+
+.reviews-date {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+
+    padding-bottom: 21px;
+}
+
+.reviews-name {
+    width: 200px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #ffffff;
+    padding-bottom: 22px;
+}
+
+.reviews__courses {
+    width: 214px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #ffffff;
+}
+
+.reviews__slaider {
+    .slick-dots {
+        padding-top: 32px;
+    }
+    .slick-active button {
+        background: #031e65;
+    }
+}
