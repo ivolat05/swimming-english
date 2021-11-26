@@ -1,6 +1,7 @@
 .pop-up {
     max-width: 1740px;
     margin: 0 auto;
+
     .pop-up-wrapp {
         padding: 70px 30px 132px 30px;
         background: #f9f9f9;
@@ -95,10 +96,6 @@
     right: -10px;
 }
 
-.pop-up-courses {
-    display: none;
-}
-
 .mCSB_scrollTools .mCSB_draggerRail {
     background: none;
 }
@@ -116,7 +113,7 @@
     margin-top: 30px;
     width: 397px;
     height: 678px;
-    padding: 68px 0 20px 20px;
+    padding: 68px 20px 20px 20px;
     position: relative;
     .popup-slaider-text {
         padding-bottom: 10px;

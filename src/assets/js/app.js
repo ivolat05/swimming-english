@@ -1,6 +1,78 @@
 //= components/slick.min.js
 //= components/jquery.mCustomScrollbar.js
+//= components/jquery.magnific-popup.js
 
+$('.popup-content').magnificPopup({
+    type: 'inline'
+});
+
+function closePopup() {
+    $.magnificPopup.close();
+}
+
+$('.popup-slider-2').magnificPopup({
+    type: 'inline',
+    callbacks: {
+        open: function () {
+            $('.popup-slaider-2').slick({
+                infinite: true,
+                arrows: true,
+                dots: false,
+                prevArrow: '<button class="slick-btn slick-prev"><img src="../../assets/img/arrow-left.svg" alt="prev"></button>',
+                nextArrow: '<button class="slick-btn slick-next"><img src="../../assets/img/arrow-right.svg" alt="next"></button>',
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 1110,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 753,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                ]
+            });
+        }
+    }
+});
+
+$('.popup-slider').magnificPopup({
+    type: 'inline',
+    callbacks: {
+        open: function () {
+            $('.popup-slaider').slick({
+                infinite: true,
+                arrows: true,
+                dots: false,
+                prevArrow: '<button class="slick-btn slick-prev"><img src="../../assets/img/arrow-left.svg" alt="prev"></button>',
+                nextArrow: '<button class="slick-btn slick-next"><img src="../../assets/img/arrow-right.svg" alt="next"></button>',
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 1110,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 753,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                ]
+            });
+        }
+    }
+});
 
 $(function () {
     $('.news__slaider').slick({
@@ -49,55 +121,8 @@ $(function () {
         ]
     });
 
-    $('.popup-slaider').slick({
-        infinite: true,
-        arrows: true,
-        dots: false,
-        prevArrow: '<button class="slick-btn slick-prev"><img src="../../assets/img/arrow-left.svg" alt="prev"></button>',
-        nextArrow: '<button class="slick-btn slick-next"><img src="../../assets/img/arrow-right.svg" alt="next"></button>',
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        responsive: [{
-            breakpoint: 1110,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 753,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-        ]
-    });
 
-    $('.popup-slaider-2').slick({
-        infinite: true,
-        arrows: true,
-        dots: false,
-        prevArrow: '<button class="slick-btn slick-prev"><img src="../../assets/img/arrow-left.svg" alt="prev"></button>',
-        nextArrow: '<button class="slick-btn slick-next"><img src="../../assets/img/arrow-right.svg" alt="next"></button>',
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        responsive: [{
-            breakpoint: 1110,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 753,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-        ]
-    });
+
 
 
     const popupFormInput = document.querySelectorAll('.popup-form-input');
@@ -118,4 +143,31 @@ $(function () {
     });
 
 
+    let popupBg = document.querySelector('.popup__bg'); // Фон попап окна
+    let popup = document.querySelector('.pop--up'); // Само окно
+    let openPopupButtons = document.querySelectorAll('.open-popup'); // Кнопки для показа окна
+    let closePopupButton = document.querySelectorAll('.close-popup');
+
+    openPopupButtons.forEach((button) => { // Перебираем все кнопки
+        button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+            e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+            popupBg.classList.add('active'); // Добавляем класс 'active' для фона
+            popup.classList.add('active'); // И для самого окна
+            document.querySelector('body').classList.add('stop');
+        })
+    });
+    closePopupButton.forEach((item) => {
+        item.addEventListener('click', () => { // Вешаем обработчик на крестик
+            popupBg.classList.remove('active'); // Убираем активный класс с фона
+            popup.classList.remove('active'); // И с окна
+            document.querySelector('body').classList.remove('stop');
+        });
+    })
+    document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
+        if (e.target === popupBg) { // Если цель клика - фот, то:
+            popupBg.classList.remove('active'); // Убираем активный класс с фона
+            popup.classList.remove('active'); // И с окна
+            document.querySelector('body').classList.remove('stop');
+        }
+    });
 });
