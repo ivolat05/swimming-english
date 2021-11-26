@@ -1,0 +1,231 @@
+.pop-up {
+    max-width: 1740px;
+    margin: 0 auto;
+    .pop-up-wrapp {
+        padding: 70px 30px 132px 30px;
+        background: #f9f9f9;
+        box-shadow: 0px 0px 14px #a7a7a7;
+        border-radius: 20px;
+    }
+}
+
+.popup__courses-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+
+    color: #bb2831;
+    padding-bottom: 62px;
+}
+
+.popup-slaider-box {
+    width: 312px;
+    height: 549px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px 15px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+
+.popup-slaider-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #031e65;
+    padding-bottom: 21px;
+}
+
+.popup-slaider-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #242424;
+    padding-bottom: 18px;
+}
+.popup-slaider-text:nth-last-child(1) {
+    padding-bottom: 0;
+}
+
+.popup-slaider-span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #242424;
+}
+
+.popup-slaider-content {
+    height: 450px;
+}
+.popup-slaider-btn {
+    width: 137px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #bb2831;
+    border-radius: 45px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #bb2831;
+    transition: 0.4s;
+    &:hover {
+        color: #242424;
+        border: 2px solid #242424;
+    }
+}
+
+.slick-btn {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+}
+
+.slick-prev {
+    left: -10px;
+}
+
+.slick-next {
+    right: -10px;
+}
+
+.pop-up-courses {
+    display: none;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    background: none;
+}
+
+.mCSB_scrollTools .mCSB_dragger {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    width: 5px;
+}
+
+.box-children-1,
+.box-children-2,
+.box-children-3,
+.box-children-4 {
+    margin-top: 30px;
+    width: 397px;
+    height: 678px;
+    padding: 68px 0 20px 20px;
+    position: relative;
+    .popup-slaider-text {
+        padding-bottom: 10px;
+    }
+
+    .popup-slaider-content {
+        height: 523px;
+    }
+    .popup-slaider-title {
+        padding-bottom: 6px;
+    }
+
+    .popup-slaider-btn {
+        background: #031e65;
+        border-radius: 45px;
+        color: #fff;
+        border: none;
+        &:hover {
+            background: #042883;
+            border: none;
+        }
+    }
+}
+
+.pop-up-courses-children {
+    .popup-close {
+        margin-bottom: 31px;
+    }
+    .pop-up-wrapp {
+        padding-top: 58px;
+        padding-bottom: 57px;
+    }
+
+    .popup__courses-title {
+        padding-bottom: 40px;
+    }
+}
+.popup-head-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.box-children-1 {
+    background: linear-gradient(0deg, rgba(0, 192, 255, 0.2), rgba(0, 192, 255, 0.2)), #ffffff;
+    border-radius: 20px;
+    .popup-head-img {
+        width: 214px;
+        height: 84px;
+        top: -28px;
+    }
+}
+.box-children-2 {
+    background: linear-gradient(0deg, rgba(153, 153, 255, 0.2), rgba(153, 153, 255, 0.2)), #ffffff;
+    border-radius: 20px;
+    .popup-head-img {
+        width: 125px;
+        height: 73px;
+        top: -29px;
+    }
+}
+.box-children-3 {
+    background: linear-gradient(0deg, rgba(254, 202, 80, 0.2), rgba(254, 202, 80, 0.2)), #ffffff;
+    border-radius: 20px;
+    .popup-head-img {
+        width: 328px;
+        height: 55px;
+        top: -28px;
+    }
+}
+.box-children-4 {
+    background: linear-gradient(0deg, rgba(51, 204, 51, 0.2), rgba(51, 204, 51, 0.2)), #ffffff;
+    border-radius: 20px;
+    .popup-head-img {
+        width: 328px;
+        height: 55px;
+        top: -28px;
+    }
+}
+
+.popup-content-subtitle-1,
+.popup-content-subtitle-2,
+.popup-content-subtitle-3 {
+    position: relative;
+    padding-bottom: 5px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #031e65;
+    padding-left: 30px;
+
+    &::before {
+        content: url("../../assets/img/popup-1.svg");
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.popup-content-subtitle-2 {
+    padding-bottom: 10px;
+    &::before {
+        content: url("../../assets/img/popup-2.svg");
+    }
+}
+.popup-content-subtitle-3 {
+    padding-bottom: 10px;
+    &::before {
+        content: url("../../assets/img/popup-3.svg");
+    }
+}
