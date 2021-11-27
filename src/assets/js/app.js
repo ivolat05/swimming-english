@@ -1,9 +1,5 @@
 //= components/slick.min.js
 //= components/jquery.mCustomScrollbar.js
-//= components/jquery.magnific-popup.js
-$('.popup-content').magnificPopup({
-    type: 'inline'
-});
 
 $('.menu__burger').click((event) => {
     $('.menu__burger').toggleClass('burger__active'),
@@ -14,96 +10,79 @@ $('.menu__burger').click((event) => {
 });
 
 
-function closePopup() {
-    $.magnificPopup.close();
-}
 
-$('.popup-slider-2').magnificPopup({
-    type: 'inline',
-    alignTop: true,
-    callbacks: {
-        open: function () {
-            $('.popup-slaider-2').slick({
-                infinite: true,
-                arrows: true,
-                dots: false,
-                prevArrow: '<button class="slick-btn slick-prev"><img src="../../assets/img/arrow-left.svg" alt="prev"></button>',
-                nextArrow: '<button class="slick-btn slick-next"><img src="../../assets/img/arrow-right.svg" alt="next"></button>',
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                responsive: [{
-                    breakpoint: 1550,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 1290,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 830,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-                ]
-            });
+$('.popup-slaider-2').slick({
+    infinite: true,
+    arrows: true,
+    dots: false,
+    prevArrow: '<button class="slick-btn slick-prev"><img src="../../assets/img/arrow-left.svg" alt="prev"></button>',
+    nextArrow: '<button class="slick-btn slick-next"><img src="../../assets/img/arrow-right.svg" alt="next"></button>',
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [{
+        breakpoint: 1550,
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+        }
+    },
+    {
+        breakpoint: 1290,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+        }
+    },
+    {
+        breakpoint: 830,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
         }
     }
+    ]
 });
 
-$('.popup-slider').magnificPopup({
-    type: 'inline',
-    alignTop: true,
-    callbacks: {
-        open: function () {
-            $('.popup-slaider').slick({
-                infinite: true,
-                arrows: true,
-                dots: false,
-                prevArrow: '<button class="slick-btn slick-prev"><img src="../../assets/img/arrow-left.svg" alt="prev"></button>',
-                nextArrow: '<button class="slick-btn slick-next"><img src="../../assets/img/arrow-right.svg" alt="next"></button>',
-                slidesToShow: 5,
-                slidesToScroll: 1,
-                responsive: [{
-                    breakpoint: 1670,
-                    settings: {
-                        slidesToShow: 4,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 1440,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 1130,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 830,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
 
-                ]
-            });
+
+$('.popup-slaider').slick({
+    infinite: true,
+    arrows: true,
+    dots: false,
+    prevArrow: '<button class="slick-btn slick-prev"><img src="../../assets/img/arrow-left.svg" alt="prev"></button>',
+    nextArrow: '<button class="slick-btn slick-next"><img src="../../assets/img/arrow-right.svg" alt="next"></button>',
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    responsive: [{
+        breakpoint: 1670,
+        settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1
+        }
+    },
+    {
+        breakpoint: 1440,
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+        }
+    },
+    {
+        breakpoint: 1130,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+        }
+    },
+    {
+        breakpoint: 830,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
         }
     }
+
+    ]
 });
 
 $(function () {
@@ -180,6 +159,32 @@ $(function () {
 
     let fonRev = document.querySelector('.fon-rev');
     let popRev = document.querySelector('.pop-rev');
+    let openChildr = document.querySelector('.open-child');
+    let fonChildren = document.querySelector('.fon-children');
+    let popChildren = document.querySelector('.pop-children');
+    let openCours = document.querySelector('.open-cours');
+    let fonCours = document.querySelector('.fon-cours');
+    let popCours = document.querySelector('.pop-cours');
+
+
+    openCours.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+        e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+        fonCours.classList.add('active'); // Добавляем класс 'active' для фона
+
+        popCours.classList.add('active'); // И для самого окна
+
+        document.querySelector('body').classList.add('stop');
+    });
+
+
+    openChildr.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+        e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+        fonChildren.classList.add('active'); // Добавляем класс 'active' для фона
+
+        popChildren.classList.add('active'); // И для самого окна
+
+        document.querySelector('body').classList.add('stop');
+    });
 
 
     openRev.forEach((button) => { // Перебираем все кнопки
@@ -202,6 +207,8 @@ $(function () {
             popWrite.classList.add('active'); // И для самого окна
 
             document.querySelector('body').classList.add('stop');
+            fonChildren.classList.remove('active');
+            popChildren.classList.remove('active');
         })
     });
 
@@ -250,6 +257,10 @@ $(function () {
             document.querySelector('body').classList.remove('stop');
             fonRev.classList.remove('active');
             popRev.classList.remove('active');
+            fonChildren.classList.remove('active');
+            popChildren.classList.remove('active');
+            fonCours.classList.remove('active');
+            popCours.classList.remove('active');
         });
     })
 
@@ -283,6 +294,10 @@ $(function () {
             document.querySelector('body').classList.remove('stop');
             fonRev.classList.remove('active');
             popRev.classList.remove('active');
+            fonChildren.classList.remove('active');
+            popChildren.classList.remove('active');
+            fonCours.classList.remove('active');
+            popCours.classList.remove('active');
         }
     });
 
