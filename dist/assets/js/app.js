@@ -2619,10 +2619,132 @@ $(function () {
     });
 
 
-    let popupBg = document.querySelector('.popup__bg'); // Фон попап окна
-    let popup = document.querySelector('.pop--up'); // Само окно
+    let popupBg = document.querySelector('.popup__bg');
+    let fonNew = document.querySelector('.popup__new');
+    let fonYoutube = document.querySelector('.popup__youtube');
+    let fonWrite = document.querySelector('.fon__write');// Фон попап окна
+    let popup = document.querySelector('.pop--up');
+    let popNew = document.querySelector('.pop-new');
+    let popWrite = document.querySelector('.pop--up__write');
+    let popBell = document.querySelector('.pop--up__bell');
+    let fonBell = document.querySelector('.fon__bell');
+    let popYoutube = document.querySelector('.pop__youtube');// Само окно
     let openPopupButtons = document.querySelectorAll('.open-popup'); // Кнопки для показа окна
+    let openNews = document.querySelectorAll('.open-news');
+    let openVidio = document.querySelectorAll('.open-vidio');
+    let openWrite = document.querySelectorAll('.open-write');
+    let openBell = document.querySelectorAll('.open-bell');
+    let openRev = document.querySelectorAll('.rev__open');
     let closePopupButton = document.querySelectorAll('.close-popup');
+
+    let fonRev = document.querySelector('.fon-rev');
+    let popRev = document.querySelector('.pop-rev');
+
+
+    openRev.forEach((button) => { // Перебираем все кнопки
+        button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+            e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+            fonRev.classList.add('active'); // Добавляем класс 'active' для фона
+
+            popRev.classList.add('active'); // И для самого окна
+
+            document.querySelector('body').classList.add('stop');
+        })
+    });
+
+
+    openWrite.forEach((button) => { // Перебираем все кнопки
+        button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+            e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+            fonWrite.classList.add('active'); // Добавляем класс 'active' для фона
+
+            popWrite.classList.add('active'); // И для самого окна
+
+            document.querySelector('body').classList.add('stop');
+        })
+    });
+
+
+    openBell.forEach((button) => { // Перебираем все кнопки
+        button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+            e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+            fonBell.classList.add('active'); // Добавляем класс 'active' для фона
+
+            popBell.classList.add('active'); // И для самого окна
+            document.querySelector('body').classList.add('stop');
+        })
+    });
+
+
+    openVidio.forEach((button) => { // Перебираем все кнопки
+        button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+            e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+            fonYoutube.classList.add('active'); // Добавляем класс 'active' для фона
+            popYoutube.classList.add('active'); // И для самого окна
+            document.querySelector('body').classList.add('stop');
+        })
+    });
+
+    openNews.forEach((button) => { // Перебираем все кнопки
+        button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+            e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+            fonNew.classList.add('active');
+            // Добавляем класс 'active' для фона
+            popNew.classList.add('active'); // И для самого окна
+            document.querySelector('body').classList.add('stop');
+        })
+    });
+    closePopupButton.forEach((item) => {
+        item.addEventListener('click', () => { // Вешаем обработчик на крестик
+            popupBg.classList.remove('active'); // Убираем активный класс с фона
+            popup.classList.remove('active');
+            popNew.classList.remove('active');
+            popYoutube.classList.remove('active');
+            fonWrite.classList.remove('active');
+            popBell.classList.remove('active');
+            popWrite.classList.remove('active');
+            fonNew.classList.remove('active');
+            fonBell.classList.remove('active');
+            fonYoutube.classList.remove('active'); // И с окна
+            document.querySelector('body').classList.remove('stop');
+            fonRev.classList.remove('active');
+            popRev.classList.remove('active');
+        });
+    })
+
+    openPopupButtons.forEach((item) => {
+        item.addEventListener('click', () => { // Вешаем обработчик на крестик
+            fonWrite.classList.remove('active');
+            fonBell.classList.remove('active');
+            popWrite.classList.remove('active');
+            fonRev.classList.remove('active');
+            popRev.classList.remove('active');
+
+            document.querySelector('body').classList.remove('stop');
+        });
+    })
+
+
+
+
+    document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
+        if (e.target === popupBg) { // Если цель клика - фот, то:
+            popupBg.classList.remove('active'); // Убираем активный класс с фона
+            popup.classList.remove('active');
+            popNew.classList.remove('active');
+            popYoutube.classList.remove('active');
+            fonYoutube.classList.remove('active');
+            fonWrite.classList.remove('active');
+            popWrite.classList.remove('active');
+            popBell.classList.remove('active');
+            fonBell.classList.remove('active');
+            popupNew.classList.remove('active'); // И с окна
+            document.querySelector('body').classList.remove('stop');
+            fonRev.classList.remove('active');
+            popRev.classList.remove('active');
+        }
+    });
+
 
     openPopupButtons.forEach((button) => { // Перебираем все кнопки
         button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
@@ -2630,20 +2752,7 @@ $(function () {
             popupBg.classList.add('active'); // Добавляем класс 'active' для фона
             popup.classList.add('active'); // И для самого окна
             document.querySelector('body').classList.add('stop');
-        })
-    });
-    closePopupButton.forEach((item) => {
-        item.addEventListener('click', () => { // Вешаем обработчик на крестик
-            popupBg.classList.remove('active'); // Убираем активный класс с фона
-            popup.classList.remove('active'); // И с окна
-            document.querySelector('body').classList.remove('stop');
         });
-    })
-    document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
-        if (e.target === popupBg) { // Если цель клика - фот, то:
-            popupBg.classList.remove('active'); // Убираем активный класс с фона
-            popup.classList.remove('active'); // И с окна
-            document.querySelector('body').classList.remove('stop');
-        }
     });
+
 });

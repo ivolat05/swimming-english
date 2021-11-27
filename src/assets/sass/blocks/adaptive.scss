@@ -343,6 +343,9 @@
     }
 }
 @media (max-width: 768px) {
+    .teacher-img {
+        padding-top: 177px;
+    }
     .reviews {
         margin-bottom: 30px;
     }
@@ -391,6 +394,9 @@
 }
 
 @media (max-width: 576px) {
+    .teacher-img {
+        padding-top: 90px;
+    }
     .popup__courses-title {
         font-weight: 700;
         font-size: 30px;
@@ -581,5 +587,17 @@
     .popup-slaider-box {
         width: 100%;
         margin-left: 0;
+    }
+
+    .pop__youtube.active,
+    .pop-new.active {
+        // При добавлении класса 'active'
+        transform: translate(-50%, -20%) scale(1); // Так же центрируем и плавно увеличиваем
+    }
+}
+
+@media (max-width: 406px) {
+    .teacher-img {
+        padding-top: 115px;
     }
 }

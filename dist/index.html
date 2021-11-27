@@ -44,9 +44,9 @@
                                             <img src="./assets/img/viber.svg" alt="">
                                         </a>
                                     </div>
-                                    <a href="#popup-content-1" class="header__link popup-content">
+                                    <div class="header__link open-bell">
                                         заказать звонок
-                                    </a>
+                                    </div>
         
                                 </div>
                                 <nav class="nav">
@@ -107,9 +107,9 @@
                     </div>
         
                     <div class="burger">
-                        <a href="#popup-content-1" class="burger-link popup-content">
+                        <div class="burger-link open-bell">
                             <img src="./assets/img/burger-phone.svg" alt="" class="burger-link-img">
-                        </a>
+                        </div>
                         <button class="menu__burger">
                             <img src="./assets/img/burger.svg" alt="" class="menu__burger-img">
                             <img class="menu__burger-img--active" src="./assets/img/burger-active.svg" alt="">
@@ -357,9 +357,9 @@
                                             Занятия с детьми проходят в форме увлекательной игры. Благодаря эмоциональной
                                             вовлеченности ...
                                         </p>
-                                        <a href="#popup-content-4" class="btn popup-content">
+                                        <button class="btn open-news">
                                             Подробнее
-                                        </a>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -377,9 +377,9 @@
                                             Занятия с детьми проходят в форме увлекательной игры. Благодаря эмоциональной
                                             вовлеченности ...
                                         </p>
-                                        <a href="#popup-content-4" class="btn popup-content">
+                                        <button class="btn open-news">
                                             Подробнее
-                                        </a>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -399,9 +399,9 @@
                                             Занятия с детьми проходят в форме увлекательной игры. Благодаря эмоциональной
                                             вовлеченности ...
                                         </p>
-                                        <a href="#popup-content-5" class="btn popup-content">
+                                        <button class="btn  open-vidio">
                                             Подробнее
-                                        </a>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -418,9 +418,9 @@
                                             Занятия с детьми проходят в форме увлекательной игры. Благодаря эмоциональной
                                             вовлеченности ...
                                         </p>
-                                        <a href="#popup-content-4" class="btn popup-content">
+                                        <button class="btn open-news">
                                             Подробнее
-                                        </a>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -438,9 +438,9 @@
                                             Занятия с детьми проходят в форме увлекательной игры. Благодаря эмоциональной
                                             вовлеченности ...
                                         </p>
-                                        <a href="#popup-content-4" class="btn popup-content">
+                                        <button class="btn open-news">
                                             Подробнее
-                                        </a>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -462,9 +462,9 @@
                                             Занятия с детьми проходят в форме увлекательной игры. Благодаря эмоциональной
                                             вовлеченности ...
                                         </p>
-                                        <a href="#popup-content-5" class="btn popup-content">
+                                        <button class="btn  open-vidio">
                                             Подробнее
-                                        </a>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -483,9 +483,9 @@
                 <h2 class="reviews-title">
                     Отзывы
                 </h2>
-                <a href="#popup-content-2" class="reviews-btn popup-content">
+                <div class="reviews-btn rev__open">
                     оставить отзыв
-                </a>
+                </div>
                 <div class="reviews__slaider">
                     <div>
                         <div class="reviews__slaider-box">
@@ -662,92 +662,98 @@
                     © Copyright
                 </div>
             </div>
-        </footer>    <div id="popup-content-1" class=" mfp-hide">
-            <div class="popup popup-bell" onClick="parent.closePopup();">
-                <button class="popup-close">
-                    <img src="./assets/img/btn-close.svg" alt="" class="popup__close-img">
-                </button>
-                <div class="popup__wrapp">
-                    <img class="popu__wrapp-img" src="./assets/img/pop-logo.svg" alt="">
-                    <div class="popup-title">
-                        Оставьте ваши контактные данные и в ближайшее время мы свяжемся с вами
+        </footer>    <div class="fon__bell">
+            <div class="pop--up__bell">
+                <div class="popup popup-bell" onClick="parent.closePopup();">
+                    <button class="popup-close close-popup">
+                        <img src="./assets/img/btn-close.svg" alt="" class="popup__close-img">
+                    </button>
+                    <div class="popup__wrapp">
+                        <img class="popu__wrapp-img" src="./assets/img/pop-logo.svg" alt="">
+                        <div class="popup-title">
+                            Оставьте ваши контактные данные и в ближайшее время мы свяжемся с вами
+                        </div>
+                        <form action="/" class="popup-form">
+                            <input class="popup-form-input" type="text" placeholder="Ваше имя">
+                            <label class="red">
+                                <input class="popup-form-input" type="text">
+                                <span class='red-text'>Телефон<span class='red-1'>*</span></span>
+                            </label>
+                            <button class="popup-btn open-popup" type="submit">
+                                отправить
+                            </button>
+                        </form>
                     </div>
-                    <form action="/" class="popup-form">
-                        <input class="popup-form-input" type="text" placeholder="Ваше имя">
-                        <label class="red">
-                            <input class="popup-form-input" type="text">
-                            <span class='red-text'>Телефон<span class='red-1'>*</span></span>
-                        </label>
-                        <button class="popup-btn" type="submit">
-                            отправить
-                        </button>
-                    </form>
                 </div>
             </div>
-        </div>    <div id="popup-content-2" class=" mfp-hide">
-            <div class="popup popup-reviews">
-                <button class="popup-close" onClick="parent.closePopup();">
-                    <img src="./assets/img/btn-close.svg" alt="" class="popup__close-img">
-                </button>
-                <div class="popup__wrapp">
-                    <img class="popu__wrapp-img" src="./assets/img/pop-logo.svg" alt="">
-                    <div class="popup-title">
-                        Оставить отзыв
+        </div>    <div class="fon-rev">
+            <div class="pop-rev">
+                <div class="popup popup-reviews">
+                    <button class="popup-close close-popup">
+                        <img src="./assets/img/btn-close.svg" alt="" class="popup__close-img">
+                    </button>
+                    <div class="popup__wrapp">
+                        <img class="popu__wrapp-img" src="./assets/img/pop-logo.svg" alt="">
+                        <div class="popup-title">
+                            Оставить отзыв
+                        </div>
+                        <form action="/" class="popup-form">
+                            <label class="red">
+                                <input class="popup-form-input" type="text">
+                                <span class='red-text'>Ваше имя<span class='red-1'>*</span></span>
+                            </label>
+                            <label class="red">
+                                <input class="popup-form-input" type="text">
+                                <span class='red-text'>Телефон<span class='red-1'>*</span></span>
+                            </label>
+                            <textarea class="popup-textarea" placeholder="Отзыв"></textarea>
+                            <button class="popup-btn open-popup" type="submit">
+                                отправить
+                            </button>
+                        </form>
                     </div>
-                    <form action="/" class="popup-form">
-                        <label class="red">
-                            <input class="popup-form-input" type="text">
-                            <span class='red-text'>Ваше имя<span class='red-1'>*</span></span>
-                        </label>
-                        <label class="red">
-                            <input class="popup-form-input" type="text">
-                            <span class='red-text'>Телефон<span class='red-1'>*</span></span>
-                        </label>
-                        <textarea class="popup-textarea" placeholder="Отзыв"></textarea>
-                        <button class="popup-btn" type="submit">
-                            отправить
-                        </button>
-                    </form>
                 </div>
             </div>
-        </div>    <div id="popup-content-3" class=" mfp-hide">
-            <div class="popup popup-mail">
-                <button class="popup-close" onClick="parent.closePopup();">
-                    <img src="./assets/img/btn-close.svg" alt="" class="popup__close-img">
-                </button>
-                <div class="popup__wrapp">
-                    <img class="popu__wrapp-img" src="./assets/img/pop-logo.svg" alt="">
-                    <div class="popup-title">
-                        Оставьте ваши контактные данные и в ближайшее время мы свяжемся с вами
+        </div>    <div class='fon__write'>
+            <div class="pop--up__write">
+                <div class="popup popup-mail">
+                    <button class="popup-close close-popup" onClick="parent.closePopup();">
+                        <img src="./assets/img/btn-close.svg" alt="" class="popup__close-img">
+                    </button>
+                    <div class="popup__wrapp">
+                        <img class="popu__wrapp-img" src="./assets/img/pop-logo.svg" alt="">
+                        <div class="popup-title">
+                            Оставьте ваши контактные данные и в ближайшее время мы свяжемся с вами
+                        </div>
+                        <form action="/" class="popup-form">
+                            <label class="red">
+                                <input class="popup-form-input" type="text">
+                                <span class='red-text'>ФИО<span class='red-1'>*</span></span>
+                            </label>
+                            <label class="red">
+                                <input class="popup-form-input" type="tel">
+                                <span class='red-text'>Телефон<span class='red-1'>*</span></span>
+                            </label>
+                            <label class="red">
+                                <input class="popup-form-input" type="email">
+                                <span class='red-text'>E-mail<span class='red-1'>*</span></span>
+                            </label>
+                            <select class="popup-select">
+                                <option class="popup-option">
+                                    Дети 3-4 года
+                                </option>
+                                <option class="popup-option">
+                                    Дети 3-4 года
+                                </option>
+                                <option class="popup-option">
+                                    Дети 3-4 года
+                                </option>
+                            </select>
+                            <button class="popup-btn open-popup" type="submit" onClick="parent.closePopup();">
+                                отправить
+                            </button>
+                        </form>
                     </div>
-                    <form action="/" class="popup-form">
-                        <label class="red">
-                            <input class="popup-form-input" type="text">
-                            <span class='red-text'>ФИО<span class='red-1'>*</span></span>
-                        </label>
-                        <label class="red">
-                            <input class="popup-form-input" type="tel">
-                            <span class='red-text'>Телефон<span class='red-1'>*</span></span>
-                        </label>
-                        <label class="red">
-                            <input class="popup-form-input" type="email">
-                            <span class='red-text'>E-mail<span class='red-1'>*</span></span>
-                        </label>
-                        <select class="popup-select">
-                            <option class="popup-option">
-                                Дети 3-4 года
-                            </option>
-                            <option class="popup-option">
-                                Дети 3-4 года
-                            </option>
-                            <option class="popup-option">
-                                Дети 3-4 года
-                            </option>
-                        </select>
-                        <button class="popup-btn open-popup" type="submit" onClick="parent.closePopup();">
-                            отправить
-                        </button>
-                    </form>
                 </div>
             </div>
         </div>    <div class="popup__bg">
@@ -768,69 +774,81 @@
                     </div>
                 </div>
             </div>
-        </div>    <div id="popup-content-4" class=" mfp-hide">
-            <div class="pop-up-news">
-                <button class="popup-close" onClick="parent.closePopup();">
-                    <img src="./assets/img/btn-close.svg" alt="" class="popup__close-img">
-                </button>
-                <div class="pop-up-wrapp">
-                    <h3 class="pop-up-title">
-                        Заголовок новости
-                    </h3>
-                    <div class="pop-up__inner-img">
-                        <img class="pop-up-img" src="./assets/img/img.jpg" alt="">
-                    </div>
-                    <p class="pop-up-text">
-                        Занятия с детьми проходят в форме увлекательной игры. Благодаря эмоциональной вовлеченности ребенок
-                        очень
-                        быстро познает мир, приобретает новые знания и привыкает слышать иностранную речь. Занятия с детьми
-                        проходят
-                        в форме увлекательной игры. Благодаря эмоциональной вовлеченности ребенок очень быстро познает мир,
-                        приобретает новые знания и привыкает слышать иностранную речь. Занятия с детьми проходят в форме
-                        увлекательной игры. Благодаря эмоциональной вовлеченности ребенок очень быстро познает мир, приобретает
-                        новые знания и привыкает слышать иностранную речь. Занятия с детьми проходят в форме увлекательной игры.
-                        Благодаря эмоциональной вовлеченности ребенок очень быстро познает мир, приобретает новые знания и
-                        привыкает
-                        слышать иностранную речь. Занятия с детьми проходят в форме увлекательной игры. Благодаря эмоциональной
-                        вовлеченности ребенок очень быстро познает мир, приобретает новые знания и привыкает слышать иностранную
-                        речь.
-                    </p>
-                    <button class="pop-up-btn " onClick="parent.closePopup();">
-                        Закрыть
+        </div>    <div class="popup__new">
+            <div class="pop-new">
+                <div class="pop-up-news">
+                    <button class="popup-close close-popup">
+                        <img src="./assets/img/btn-close.svg" alt="" class="popup__close-img">
                     </button>
+                    <div class="pop-up-wrapp">
+                        <h3 class="pop-up-title">
+                            Заголовок новости
+                        </h3>
+                        <div class="pop-up__inner-img">
+                            <img class="pop-up-img" src="./assets/img/img.jpg" alt="">
+                        </div>
+                        <p class="pop-up-text">
+                            Занятия с детьми проходят в форме увлекательной игры. Благодаря эмоциональной вовлеченности ребенок
+                            очень
+                            быстро познает мир, приобретает новые знания и привыкает слышать иностранную речь. Занятия с детьми
+                            проходят
+                            в форме увлекательной игры. Благодаря эмоциональной вовлеченности ребенок очень быстро познает мир,
+                            приобретает новые знания и привыкает слышать иностранную речь. Занятия с детьми проходят в форме
+                            увлекательной игры. Благодаря эмоциональной вовлеченности ребенок очень быстро познает мир,
+                            приобретает
+                            новые знания и привыкает слышать иностранную речь. Занятия с детьми проходят в форме увлекательной
+                            игры.
+                            Благодаря эмоциональной вовлеченности ребенок очень быстро познает мир, приобретает новые знания и
+                            привыкает
+                            слышать иностранную речь. Занятия с детьми проходят в форме увлекательной игры. Благодаря
+                            эмоциональной
+                            вовлеченности ребенок очень быстро познает мир, приобретает новые знания и привыкает слышать
+                            иностранную
+                            речь.
+                        </p>
+                        <button class="pop-up-btn close-popup">
+                            Закрыть
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>    <div id="popup-content-5" class=" mfp-hide">
-            <div class="pop-up-news-vidio">
-                <button class="popup-close" onClick="parent.closePopup();">
-                    <img src="./assets/img/btn-close.svg" alt="" class="popup__close-img">
-                </button>
-                <div class="pop-up-wrapp">
-                    <h3 class="pop-up-title">
-                        Заголовок новости
-                    </h3>
-                    <a class="news-vidio pop-up__inner-img" href='#'>
-                        <img class="news__slaider-img pop-up-img" src="./assets/img/news.jpg" alt="">
-                        <img src="./assets/img/youtube-2.svg" alt="" class="news-btn-img">
-                    </a>
-                    <p class="pop-up-text">
-                        Занятия с детьми проходят в форме увлекательной игры. Благодаря эмоциональной вовлеченности ребенок
-                        очень
-                        быстро познает мир, приобретает новые знания и привыкает слышать иностранную речь. Занятия с детьми
-                        проходят
-                        в форме увлекательной игры. Благодаря эмоциональной вовлеченности ребенок очень быстро познает мир,
-                        приобретает новые знания и привыкает слышать иностранную речь. Занятия с детьми проходят в форме
-                        увлекательной игры. Благодаря эмоциональной вовлеченности ребенок очень быстро познает мир, приобретает
-                        новые знания и привыкает слышать иностранную речь. Занятия с детьми проходят в форме увлекательной игры.
-                        Благодаря эмоциональной вовлеченности ребенок очень быстро познает мир, приобретает новые знания и
-                        привыкает
-                        слышать иностранную речь. Занятия с детьми проходят в форме увлекательной игры. Благодаря эмоциональной
-                        вовлеченности ребенок очень быстро познает мир, приобретает новые знания и привыкает слышать иностранную
-                        речь.
-                    </p>
-                    <button class="pop-up-btn " onClick="parent.closePopup();">
-                        Закрыть
+        </div>    <div class="popup__youtube">
+            <div class="pop__youtube">
+                <div class="pop-up-news-vidio">
+                    <button class="popup-close close-popup">
+                        <img src="./assets/img/btn-close.svg" alt="" class="popup__close-img">
                     </button>
+                    <div class="pop-up-wrapp">
+                        <h3 class="pop-up-title">
+                            Заголовок новости
+                        </h3>
+                        <a class="news-vidio pop-up__inner-img" href='#'>
+                            <img class="news__slaider-img pop-up-img" src="./assets/img/news.jpg" alt="">
+                            <img src="./assets/img/youtube-2.svg" alt="" class="news-btn-img">
+                        </a>
+                        <p class="pop-up-text">
+                            Занятия с детьми проходят в форме увлекательной игры. Благодаря эмоциональной вовлеченности ребенок
+                            очень
+                            быстро познает мир, приобретает новые знания и привыкает слышать иностранную речь. Занятия с детьми
+                            проходят
+                            в форме увлекательной игры. Благодаря эмоциональной вовлеченности ребенок очень быстро познает мир,
+                            приобретает новые знания и привыкает слышать иностранную речь. Занятия с детьми проходят в форме
+                            увлекательной игры. Благодаря эмоциональной вовлеченности ребенок очень быстро познает мир,
+                            приобретает
+                            новые знания и привыкает слышать иностранную речь. Занятия с детьми проходят в форме увлекательной
+                            игры.
+                            Благодаря эмоциональной вовлеченности ребенок очень быстро познает мир, приобретает новые знания и
+                            привыкает
+                            слышать иностранную речь. Занятия с детьми проходят в форме увлекательной игры. Благодаря
+                            эмоциональной
+                            вовлеченности ребенок очень быстро познает мир, приобретает новые знания и привыкает слышать
+                            иностранную
+                            речь.
+                        </p>
+                        <button class="pop-up-btn close-popup">
+                            Закрыть
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>    <div id="text-popup-2" class=" mfp-hide">
@@ -1060,9 +1078,9 @@
                                     1 месяц и более.
                                 </p>
                             </div>
-                            <a href="#popup-content-3" class="popup-slaider-btn popup-content ">
+                            <button class="popup-slaider-btn open-write" onClick="closePopup();">
                                 Записаться
-                            </a>
+                            </button>
                         </div>
                     </div>
     
@@ -1104,9 +1122,9 @@
                                     1 месяц и более.
                                 </p>
                             </div>
-                            <a href="#popup-content-3" class="popup-slaider-btn popup-content">
+                            <button class="popup-slaider-btn open-write" onClick="closePopup();">
                                 Записаться
-                            </a>
+                            </button>
                         </div>
                     </div>
     
@@ -1147,9 +1165,9 @@
                                     1 месяц и более.
                                 </p>
                             </div>
-                            <a href="#popup-content-3" class="popup-slaider-btn popup-content">
+                            <button class="popup-slaider-btn open-write">
                                 Записаться
-                            </a>
+                            </button>
                         </div>
                     </div>
     
@@ -1190,9 +1208,9 @@
                                     1 месяц и более.
                                 </p>
                             </div>
-                            <a href="#popup-content-3" class="popup-slaider-btn popup-content">
+                            <button class="popup-slaider-btn open-write" onClick="closePopup();">
                                 Записаться
-                            </a>
+                            </button>
                         </div>
                     </div>
     
