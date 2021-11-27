@@ -2,32 +2,42 @@
 layout: default
 title: Swimming.by
 ---
-{{>header}}
-{{>main}}
-{{>possibil}}
-{{>description}}
-{{>courses}}
-{{>teacher}}
-{{>news}}
-{{>reviews}}
-{{>map}}
-{{>footer}}
-{{>popup-bell}}
-{{>popup-reviews}}
-{{>popup-mail}}
-{{>popup-clos}}
-{{>pop-up-news}}
-{{>pop-up-news-vidio}}
-{{>pop-up-courses}}
-{{>pop-up-courses-children}}
+<div class="page">
+    {{>header}}
+
+    {{>main}}
+
+    {{>possibil}}
+
+    {{>description}}
+
+    {{>courses}}
+
+    {{>teacher}}
+
+    {{>news}}
+
+    {{>reviews}}
+    {{>map}}
+
+    {{>footer}}
+    {{>popup-bell}}
+    {{>popup-reviews}}
+    {{>popup-mail}}
+    {{>popup-clos}}
+    {{>pop-up-news}}
+    {{>pop-up-news-vidio}}
+    {{>pop-up-courses}}
+    {{>pop-up-courses-children}}</div>
 
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
 <script>
     ymaps.ready(init);
     function init() {
 
+
         var myMap = new ymaps.Map("map", {
-            center: [53.9357950, 27.587400],
+            center: [53.9357950, 27.584500],
             controls: ['geolocationControl', 'zoomControl'],
             zoom: 17
         },
@@ -38,6 +48,9 @@ title: Swimming.by
                 zoomControlPosition: { right: 10, top: '250px' }
             }
         );
+
+
+
 
 
         myMap.behaviors.disable('scrollZoom');

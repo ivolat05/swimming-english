@@ -1,10 +1,18 @@
 //= components/slick.min.js
 //= components/jquery.mCustomScrollbar.js
 //= components/jquery.magnific-popup.js
-
 $('.popup-content').magnificPopup({
     type: 'inline'
 });
+
+$('.menu__burger').click((event) => {
+    $('.menu__burger').toggleClass('burger__active'),
+        $('body').toggleClass('stop'),
+        $('.burger-link').toggleClass('burger-link-stop'),
+        $('.header__wrapp-inner').toggleClass('header__wrapp-inner--active'),
+        $('.logo').toggleClass('logo--active')
+});
+
 
 function closePopup() {
     $.magnificPopup.close();
@@ -12,6 +20,7 @@ function closePopup() {
 
 $('.popup-slider-2').magnificPopup({
     type: 'inline',
+    alignTop: true,
     callbacks: {
         open: function () {
             $('.popup-slaider-2').slick({
@@ -23,14 +32,21 @@ $('.popup-slider-2').magnificPopup({
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 responsive: [{
-                    breakpoint: 1110,
+                    breakpoint: 1550,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 1290,
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 1
                     }
                 },
                 {
-                    breakpoint: 753,
+                    breakpoint: 830,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1
@@ -44,6 +60,7 @@ $('.popup-slider-2').magnificPopup({
 
 $('.popup-slider').magnificPopup({
     type: 'inline',
+    alignTop: true,
     callbacks: {
         open: function () {
             $('.popup-slaider').slick({
@@ -55,19 +72,34 @@ $('.popup-slider').magnificPopup({
                 slidesToShow: 5,
                 slidesToScroll: 1,
                 responsive: [{
-                    breakpoint: 1110,
+                    breakpoint: 1670,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 1440,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 1130,
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 1
                     }
                 },
                 {
-                    breakpoint: 753,
+                    breakpoint: 830,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1
                     }
                 }
+
                 ]
             });
         }
@@ -82,14 +114,14 @@ $(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [{
-            breakpoint: 1110,
+            breakpoint: 992,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1
             }
         },
         {
-            breakpoint: 753,
+            breakpoint: 770,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -103,22 +135,7 @@ $(function () {
         arrows: false,
         dots: true,
         slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [{
-            breakpoint: 1110,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 753,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-        ]
+        slidesToScroll: 1
     });
 
 

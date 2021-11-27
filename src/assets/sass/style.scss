@@ -21,6 +21,9 @@ ul {
     padding: 0 20px;
     margin: 0 auto;
 }
+.page {
+    overflow: hidden;
+}
 @import "../sass/blocks/header.scss";
 @import "../sass/blocks/main.scss";
 @import "../sass/blocks/possibil.scss";
@@ -34,3 +37,5 @@ ul {
 @import "../sass/blocks/popup-bell.scss";
 @import "../sass/blocks/pop-up-news.scss";
 @import "../sass/blocks/pop-up-courses.scss";
+@import "../sass/blocks/burger.scss";
+@import "../sass/blocks/adaptive.scss";

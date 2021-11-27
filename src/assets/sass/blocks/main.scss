@@ -36,7 +36,10 @@
         color: #bb2831;
     }
 }
-
+.main__inner-img-mobil,
+.main__inner-img-mobil-2 {
+    display: none;
+}
 .main__inner {
     position: absolute;
     left: 51%;

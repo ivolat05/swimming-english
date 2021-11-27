@@ -14,15 +14,27 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    transition: 0.8s;
 }
 
 .logo-img-2 {
-    padding-top: 4px;
+    display: none;
 }
-
+.header-img-mobil {
+    display: none;
+}
+.header__mobil-img {
+    display: none;
+}
 .header__wrapp-inner {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
+}
+
+.header-message {
+    display: none;
 }
 
 .nav__list {

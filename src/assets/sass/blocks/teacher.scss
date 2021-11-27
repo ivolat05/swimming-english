@@ -89,6 +89,7 @@
 }
 
 .video {
+    width: 100%;
     border-radius: 50px;
 }
 
@@ -101,4 +102,19 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.teacger__youtube {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: #bb2831;
+    border-radius: 20px;
+    width: 280px;
+    height: 94px;
+    margin: 40px auto 0;
+    .teacger__youtube-img {
+        width: 240px;
+        height: 54px;
+    }
 }
