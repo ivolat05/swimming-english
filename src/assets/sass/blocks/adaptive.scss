@@ -605,3 +605,46 @@
         height: 440px;
     }
 }
+
+/*---vidio---*/
+@media (max-width: 1440px) {
+    .video {
+        height: 523px;
+    }
+}
+
+@media (max-width: 992px) {
+    .video {
+        height: 387px;
+    }
+}
+
+@media (max-width: 768px) {
+    .video {
+        height: 288px;
+    }
+}
+
+@media (max-width: 550px) {
+    .video {
+        height: 248px;
+    }
+}
+
+@media (max-width: 300px) {
+    .video {
+        height: 148px;
+    }
+}
+
+@media (max-width: 620px) {
+    .news-vidio-popup {
+        height: 260px;
+    }
+}
+
+@media (max-width: 500px) {
+    .news-vidio-popup {
+        height: 216px;
+    }
+}
