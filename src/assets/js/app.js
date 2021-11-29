@@ -51,8 +51,8 @@ $('.popup-slaider').slick({
     infinite: true,
     arrows: true,
     dots: false,
-    prevArrow: '<button class="slick-btn slick-prev"><img src="../../assets/img/arrow-left.svg" alt="prev"></button>',
-    nextArrow: '<button class="slick-btn slick-next"><img src="../../assets/img/arrow-right.svg" alt="next"></button>',
+    prevArrow: '<button class="slick-btn slick-prev"><img src="./assets/img/arrow-left.svg" alt="prev"></button>',
+    nextArrow: '<button class="slick-btn slick-next"><img src="./../assets/img/arrow-right.svg" alt="next"></button>',
     slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [{
@@ -93,6 +93,8 @@ $(function () {
         arrows: false,
         dots: true,
         slidesToShow: 3,
+        prevArrow: '<button class="slick-btn slick-prev"><img src="./assets/img/arrow-left.svg" alt="prev"></button>',
+        nextArrow: '<button class="slick-btn slick-next"><img src="./../assets/img/arrow-right.svg" alt="next"></button>',
         slidesToScroll: 1,
         responsive: [{
             breakpoint: 992,
