@@ -1,6 +1,7 @@
 //= components/slick.min.js
 //= components/jquery.mCustomScrollbar.js
 
+//menu
 $('.menu__burger').click((event) => {
     $('.menu__burger').toggleClass('burger__active'),
         $('body').toggleClass('stop'),
@@ -11,6 +12,7 @@ $('.menu__burger').click((event) => {
 
 
 
+//slaider
 $('.popup-slaider-2').slick({
     infinite: true,
     arrows: true,
@@ -120,7 +122,7 @@ $(function () {
 
 
 
-
+    // удаление добовление звездочки в input
     const popupFormInput = document.querySelectorAll('.popup-form-input');
     popupFormInput.forEach((item) => {
         item.addEventListener('mouseout', function () {
@@ -138,7 +140,16 @@ $(function () {
         $(".popup-slaider-content").mCustomScrollbar();
     });
 
+    // scroll speed
+    $(".scroll-link").click(function () {
+        let target = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 2500);
+        return false;
+    });
 
+    // pop-up
     let popupBg = document.querySelector('.popup__bg');
     let fonNew = document.querySelector('.popup__new');
     let fonYoutube = document.querySelector('.popup__youtube');
@@ -156,7 +167,6 @@ $(function () {
     let openBell = document.querySelectorAll('.open-bell');
     let openRev = document.querySelectorAll('.rev__open');
     let closePopupButton = document.querySelectorAll('.close-popup');
-
     let fonRev = document.querySelector('.fon-rev');
     let popRev = document.querySelector('.pop-rev');
     let openChildr = document.querySelector('.open-child');
@@ -166,7 +176,7 @@ $(function () {
     let fonCours = document.querySelector('.fon-cours');
     let popCours = document.querySelector('.pop-cours');
 
-
+    // pop-up courses
     openCours.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
         e.preventDefault(); // Предотвращаем дефолтное поведение браузера
         fonCours.classList.add('active'); // Добавляем класс 'active' для фона
@@ -176,7 +186,7 @@ $(function () {
         document.querySelector('body').classList.add('stop');
     });
 
-
+    // pop-up children
     openChildr.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
         e.preventDefault(); // Предотвращаем дефолтное поведение браузера
         fonChildren.classList.add('active'); // Добавляем класс 'active' для фона
@@ -186,7 +196,7 @@ $(function () {
         document.querySelector('body').classList.add('stop');
     });
 
-
+    // pop-up reviews
     openRev.forEach((button) => { // Перебираем все кнопки
         button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
             e.preventDefault(); // Предотвращаем дефолтное поведение браузера
@@ -198,7 +208,7 @@ $(function () {
         })
     });
 
-
+    // pop-up write
     openWrite.forEach((button) => { // Перебираем все кнопки
         button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
             e.preventDefault(); // Предотвращаем дефолтное поведение браузера
@@ -212,7 +222,7 @@ $(function () {
         })
     });
 
-
+    // pop-up bell
     openBell.forEach((button) => { // Перебираем все кнопки
         button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
             e.preventDefault(); // Предотвращаем дефолтное поведение браузера
@@ -223,7 +233,7 @@ $(function () {
         })
     });
 
-
+    // pop-up vidio
     openVidio.forEach((button) => { // Перебираем все кнопки
         button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
             e.preventDefault(); // Предотвращаем дефолтное поведение браузера
@@ -232,7 +242,7 @@ $(function () {
             document.querySelector('body').classList.add('stop');
         })
     });
-
+    // pop-up news
     openNews.forEach((button) => { // Перебираем все кнопки
         button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
             e.preventDefault(); // Предотвращаем дефолтное поведение браузера
@@ -242,6 +252,9 @@ $(function () {
             document.querySelector('body').classList.add('stop');
         })
     });
+
+    // pop-up close
+
     closePopupButton.forEach((item) => {
         item.addEventListener('click', () => { // Вешаем обработчик на крестик
             popupBg.classList.remove('active'); // Убираем активный класс с фона
@@ -264,6 +277,7 @@ $(function () {
         });
     })
 
+    // pop-up close
     openPopupButtons.forEach((item) => {
         item.addEventListener('click', () => { // Вешаем обработчик на крестик
             fonWrite.classList.remove('active');
@@ -278,7 +292,7 @@ $(function () {
 
 
 
-
+    // pop-up close
     document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
         if (e.target === popupBg) { // Если цель клика - фот, то:
             popupBg.classList.remove('active'); // Убираем активный класс с фона
@@ -301,7 +315,7 @@ $(function () {
         }
     });
 
-
+    // 
     openPopupButtons.forEach((button) => { // Перебираем все кнопки
         button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
             e.preventDefault(); // Предотвращаем дефолтное поведение браузера
