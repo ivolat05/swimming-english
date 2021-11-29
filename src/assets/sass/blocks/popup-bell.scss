@@ -224,7 +224,7 @@
 .pop__youtube.active,
 .pop-new.active {
     // При добавлении класса 'active'
-    transform: translate(-50%, -30%) scale(1); // Так же центрируем и плавно увеличиваем
+    transform: translate(-50%, -40%) scale(1); // Так же центрируем и плавно увеличиваем
     transition: 0.5s all;
     z-index: 4;
 }
