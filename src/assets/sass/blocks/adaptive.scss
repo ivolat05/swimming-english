@@ -595,12 +595,6 @@
         width: 100%;
         margin-left: 0;
     }
-
-    .pop__youtube.active,
-    .pop-new.active {
-        // При добавлении класса 'active'
-        transform: translate(-50%, -20%) scale(1); // Так же центрируем и плавно увеличиваем
-    }
 }
 
 @media (max-width: 406px) {

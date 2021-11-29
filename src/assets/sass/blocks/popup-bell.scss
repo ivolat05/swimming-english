@@ -176,7 +176,13 @@
 }
 
 .pop--up,
-.pop--up__bell {
+.pop-new,
+.pop__youtube,
+.pop--up__write,
+.pop--up__bell,
+.pop-rev,
+.pop-children,
+.pop-cours {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -186,11 +192,8 @@
     transition: 0.5s all;
     z-index: 4;
 }
-
-.pop__youtube,
-.pop--up__write,
-.pop-rev,
 .pop-new,
+.pop__youtube,
 .pop-children,
 .pop-cours {
     top: 0;
@@ -219,20 +222,29 @@
     cursor: pointer;
     background: none;
 }
+
 .pop__youtube.active,
-.pop-new.active {
+.pop-new.active,
+.pop-children.active,
+.pop-cours.active {
     // При добавлении класса 'active'
-    transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
+    transform: translate(-50%, 0) scale(1); // Так же центрируем и плавно увеличиваем
     transition: 0.5s all;
     z-index: 4;
 }
 
-.pop-children.active,
-.pop-cours.active {
-    // При добавлении класса 'active'
-    transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
-    transition: 0.5s all;
-    z-index: 4;
+@media (max-width: 980px) {
+    .pop--up__write.active,
+    .pop--up__bell.active,
+    .pop-rev.active {
+        transform: translate(-50%, 0) scale(1); // Так же центрируем и плавно увеличиваем
+    }
+    .pop--up__write,
+    .pop--up__bell,
+    .pop-rev {
+        top: 0;
+        transform: translate(-50%, 0) scale(0); // Центрируем и масштабируем в 0 само окно
+    }
 }
 
 .stop {

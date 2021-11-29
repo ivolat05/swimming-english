@@ -2609,9 +2609,13 @@ $(function () {
     // scroll speed fix
     let navListLink = document.querySelectorAll('.nav__list-link');
     navListLink.forEach((item) => {
-
         item.addEventListener('click', () => {
             document.querySelector('body').classList.remove('stop');
+            document.querySelector('.menu__burger').classList.remove('burger__active'),
+                document.querySelector('body').classList.remove('stop'),
+                document.querySelector('.burger-link').classList.remove('burger-link-stop'),
+                document.querySelector('.header__wrapp-inner').classList.remove('header__wrapp-inner--active'),
+                document.querySelector('.logo').classList.remove('logo--active')
         });
 
     });
