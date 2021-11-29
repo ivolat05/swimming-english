@@ -2606,6 +2606,16 @@ $(function () {
         return false;
     });
 
+    // scroll speed fix
+    let navListLink = document.querySelectorAll('.nav__list-link');
+    navListLink.forEach((item) => {
+
+        item.addEventListener('click', () => {
+            document.querySelector('body').classList.remove('stop');
+        });
+
+    });
+
     // pop-up
     let popupBg = document.querySelector('.popup__bg');
     let fonNew = document.querySelector('.popup__new');
@@ -2632,6 +2642,8 @@ $(function () {
     let openCours = document.querySelector('.open-cours');
     let fonCours = document.querySelector('.fon-cours');
     let popCours = document.querySelector('.pop-cours');
+
+
 
     // pop-up courses
     openCours.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
