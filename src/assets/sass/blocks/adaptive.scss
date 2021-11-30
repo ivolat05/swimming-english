@@ -647,3 +647,18 @@
         height: 216px;
     }
 }
+
+/*-curses-*/
+@media (max-width: 980px) {
+    .popup-slaider-box,
+    .box-children-1,
+    .box-children-2,
+    .box-children-3,
+    .box-children-4 {
+        max-height: 100%;
+
+        .popup-slaider-content {
+            height: 100%;
+        }
+    }
+}
