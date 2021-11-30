@@ -41,12 +41,16 @@
     flex-direction: column;
     width: 100%;
     padding: 30px 0;
+    margin-left: 30px;
+}
+
+.descript__wrapp-box:nth-child(1) {
+    margin-left: 0;
 }
 
 .descript__wrapp-inner {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
 }
 
 .descript__wrapp {

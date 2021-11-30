@@ -7,7 +7,7 @@
 .teacher__wrapp {
     display: flex;
     justify-content: center;
-    gap: 32px;
+
     margin-bottom: 30px;
 }
 
@@ -114,4 +114,8 @@
         width: 240px;
         height: 54px;
     }
+}
+
+.teacher__wrapp-inner {
+    margin-left: 30px;
 }
